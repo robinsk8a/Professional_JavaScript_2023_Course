@@ -6,6 +6,9 @@ const wordsNumberEl = document.querySelector(".stat__number--words");
 const maxTwitterChar = 280;
 const maxFacebookChar = 2200;
 
+twitterNumberEl.textContent = maxTwitterChar;
+facebookNumberEl.textContent = maxFacebookChar;
+
 const inputHandler = () => {
     let numberOfWords = wordsNumberEl.textContent = textareaEl.value.split(' ').length;
     const numberOfCharacters = charactersNumberEl.textContent = textareaEl.value.length;
